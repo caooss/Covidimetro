@@ -1,0 +1,37 @@
+.navbar-custom{
+    background-color: #654321;
+}
+
+.footer{
+    position:fixed;
+    left: 0px;
+    bottom:0px;
+    width:100%;
+    background-color: black;
+    text-align: center;
+    height: 30px;
+    color: white;
+}
+
+.nav-pills > li > a.active {
+    background-color: #0aa372 !important;
+    color: #ffffff !important;
+    }
+    
+    .nav-pills > li > a:hover {
+    color: #ffffff !important;
+    }
+    
+    .nav-link-color {
+    color: #ffffff;
+    }
+
+.tam{
+    font-size: 30px;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 20px;
+    height: 1em;
+}
