@@ -35,3 +35,8 @@ input[type=radio] {
     width: 20px;
     height: 1em;
 }
+
+p{
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

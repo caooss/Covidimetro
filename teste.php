@@ -24,10 +24,10 @@
             </div>
                 <ul class="nav nav-pills nav-link-color">
                     <li class="nav-item">
-                    <a class="nav-link nav-link-color" aria-current="page" href="./index.php">Quem Somos</a>
+                    <a class="nav-link nav-link-color" href="./index.php">Quem Somos</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link nav-link-color active" href="#">Faça o Teste</a>
+                    <a class="nav-link nav-link-color active" aria-current="page" href="./teste.php">Faça o Teste</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link nav-link-color" href="./faleconosco.php">Fale Conosco</a>
@@ -119,13 +119,55 @@
                     // echo $grave;
 
                     if(((($comum<=3 && $comum!=0) || ($m_comum<=2 && $m_comum!=0)) && $grave==0)){
-                        echo "baixo";
+                        echo '
+                              <div class="container">
+                                <h3 align="center">Baixa chance</h3><br>
+                                <p class="text-justify">
+                                    As orientações médicas para suspeita de COVID-19 são que fiquemos em casa por 14 dias e prestar atenção no quadro de seus sintomas. 
+                                    Nesse caso, as medidas a serem tomadas são: fique de repouso, hidrate-se bem, mantenha uma alimentação saudável e, se precisar, recorra a 
+                                    medicamentos como antitérmicos e analgésicos para aliviar os incômodos. 
+                                    Se precisar tirar qualquer dúvida, ligue para o Disque Saúde, pelo número 136 – profissionais fazem o atendimento, dando orientações sem 
+                                    que o paciente precise se deslocar. 
+                                </p>
+                                <p>Use máscara, lave as mãos e mantenha uma distância segura.</p>
+                              </div>
+                        ';
                     }else if(((($comum<=3 && $comum!=0) || ($m_comum!=0 && $m_comum==3)) && $grave==1)){
-                        echo "médio";
+                        echo '
+                              <div class="container">
+                                <h3 align="center">Média chance</h3><br>
+                                <p class="text-justify">
+                                    Caso sintomas como febre alta persistente e tosses acompanhadas de desconforto respiratório apareçam, é necessário que se procure o 
+                                    centro de atendimento médico contra COVID-19 mais próximo urgentemente.
+                                    Em caso de confirmação da doença em casa, o isolamento de demais moradores da residência com afastamento de no mínimo um metro deve ocorrer. 
+                                    O portador deve ficar em um cômodo da casa, com as janelas abertas para que circule ar no ambiente. A limpeza de objetos com álcool 70% como 
+                                    móveis, vaso sanitário e maçanetas é necessária, seu lixo deve ser separado dos demais e objetos de uso pessoal como talheres e escova não 
+                                    devem ser utilizados por mais ninguém.
+                                </p>
+                                <p>Use máscara, lave as mãos e mantenha uma distância segura.</p>
+                              </div>
+                        ';
                     }else if(((($comum<=3 && $comum!=0) || ($m_comum!=0 || $m_comum==3)) || ($grave!=0 && $grave<=4))){
-                        echo "alto";
+                        echo '
+                              <div class="container">
+                                <h3 align="center">Alta chance</h3><br>
+                                <p class="text-justify">
+                                    Procure o centro de atendimento contra COVID-19 mais próximo urgentemente.
+                                </p>
+                                <p>Use máscara, lave as mãos e mantenha uma distância segura.</p>
+                              </div>
+                        ';
                     }else{
-                        echo "nenhum";
+                        echo '
+                              <div class="container">
+                                <h3 align="center">Quase Nenhuma chance</h3><br>
+                                <p class="text-justify">
+                                    Fique em casa, se possível, e respeite tanto as normas de distanciamento quanto de prevenção para que não contraia e não 
+                                    dissemine o vírus.
+                                </p>
+                                <p>Use máscara, lave as mãos e mantenha uma distância segura.</p>
+                              </div>
+                        ';
                     }
 
                     // foreach($grupo_risco as $grupo){

@@ -27,13 +27,13 @@
             </div>
                 <ul class="nav nav-pills nav-link-color">
                     <li class="nav-item">
-                    <a class="nav-link nav-link-color" aria-current="page" href="./index.php">Quem Somos</a>
+                    <a class="nav-link nav-link-color" href="./index.php">Quem Somos</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link nav-link-color" href="./teste.php">Faça o Teste</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link nav-link-color active" href="#">Fale Conosco</a>
+                    <a class="nav-link nav-link-color active" aria-current="page" href="./faleconosco.php">Fale Conosco</a>
                     </li>
                 </ul>
         </nav>
